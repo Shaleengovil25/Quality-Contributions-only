@@ -18,10 +18,10 @@ int binary_search(int arr[], int first, int last, int key)
 int main()
 {
  int n, mid, last, first=0, key, flag=0, result;
- cout<<"Enter Number of Elements: ";
+ cout<<"Enter Number of Elements : ";
  cin>>last;
  int arr[last];
- cout<<"Enter elements in Sorted order: ";
+ cout<<"Enter elements in Sorted order : \n";
  for(int i=0;i<last;i++){
  cin>>arr[i];
  }
@@ -30,10 +30,10 @@ int main()
  auto start = steady_clock::now();
  result = binary_search(arr, first, last, key);
  if (result != -1){
- cout<<"Key Found at index: "<<result<<endl;
+ cout<<"Key Found at index : "<<result<<endl;
  }
  else{
- cout<<"Key not Found"<<endl;
+ cout<<"Key not Found\n"<<endl;
  }
  auto stop = steady_clock::now();
  auto duration = duration_cast<nanoseconds>(stop - start);
